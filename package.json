@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "biome lint --write",
     "format": "biome format --write",
-    "check": "biome check --write",
-    "prepare": "husky install"
+    "check": "biome check --write"
   },
   "dependencies": {
     "next": "14.2.14",
@@ -21,13 +20,8 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "husky": "^8.0.0",
-    "lint-staged": "^15.2.11",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["biome lint --write", "biome format --write"]
   }
 }
